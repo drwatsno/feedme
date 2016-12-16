@@ -1,2 +1,2 @@
 # feedme
-pure javascript umd drag'n'drop file upload widget
+pure javascript umd module for drag'n'drop file upload

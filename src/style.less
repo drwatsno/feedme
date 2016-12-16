@@ -1,0 +1,212 @@
+.single-image-uploader {
+  width: 154px;
+  height: 154px;
+  margin-bottom: 40px;
+  border: 1px dashed #6e6e6e;
+  margin-top: 5px;
+  cursor: pointer;
+  position: relative;
+ // background: url("../template/shared/add_photo.png") no-repeat;
+  background-position: 63px -69px;
+  display: inline-block;
+  margin-right: 40px;
+  vertical-align: top;
+  &.loaded {
+    border: 1px solid #6e6e6e;
+  }
+  &:hover {
+   // background: url("../template/shared/add_photo.png") no-repeat,#e4f8ff;
+    background-position: 63px 61px;
+  }
+  .clearbtn {
+    position: absolute;
+   // background: url("../template/shared/delete_photo.png") no-repeat;
+    width: 13px;
+    height: 13px;
+    cursor: pointer;
+    background-position: 0 0;
+    right: -18px;
+    bottom: 0;
+    &:hover {
+      background-position: 0px -19px;
+    }
+  }
+  .ecms-elements_field-is-watermark {
+    position: absolute;
+    top: 20px;
+    right: -18px;
+  }
+  .image-add_button {
+    width: 100%;
+    height: 100%;
+    &:not([src]) {
+      opacity: 0;
+    }
+    &:not([src])+.clearbtn {
+      display: none;
+      &+.item-published {
+        display: none;
+      }
+    }
+  }
+}
+.feedme-dragmodule {
+  border: 2px solid;
+  min-height: 50vmin;
+  width: 84vmin;
+  margin: 7vmin auto;
+  border-radius: 1vmin;
+  background: #666666;
+  position: relative;
+  &:not(:empty) {
+    &:after {
+      font-size: 0;
+    }
+  }
+  &.something-inside {
+    &:after {
+      content: "";
+      position: relative;
+      width: 18vmin;
+      height: 18vmin;
+      margin: 1vmin;
+      border: 2px solid #FFF;
+      display: inline-block;
+      background: rgba(255,255,255,0.3);
+      vertical-align: top;
+      overflow: hidden;
+      top:0;
+      left: 0;
+      object-fit: contain;
+      object-position: 50% 50%;
+    }
+  }
+  &:after {
+    content: "drop here";
+    color: #FFF;
+    display: block;
+    text-align: center;
+    top: 50%;
+    position: absolute;
+    font-size: 2em;
+    left: 50%;
+    margin-left: -4rem;
+    z-index: 0;
+  }
+  .feedme-file {
+    width: 18vmin;
+    height: 18vmin;
+    margin: 1vmin;
+    border: 2px solid #FFF;
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+    object-fit: contain;
+    object-position: 50% 50%;
+    cursor: pointer;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: 50%;
+    }
+  }
+}
+.drag-module-wrap {
+  margin: 40px 0 60px;
+  .input-submit {
+    display: none;
+  }
+}
+.drag-module {
+  border: 2px solid #ccc;
+  width: 400px;
+  min-height: 150px;
+  box-sizing: border-box;
+  margin: 20px auto;
+  background: #e8e8e8;
+  position: relative;
+  border-radius: 5px;
+  &:not(:empty) {
+    &:after {
+      font-size: 0;
+    }
+    &+.input-submit {
+      display: inline-block;
+    }
+  }
+  &.waiting {
+   // background: url("../template/shared/preloader-bw.gif") no-repeat 50% 50%,#e8e8e8;
+    &+.input-submit {
+      display: none;
+    }
+    .fdrag-file {
+      display: none;
+    }
+  }
+  &.something-inside {
+    min-height: 300px;
+    &:after {
+      .single-image-uploader;
+      content: "";
+      position: relative;
+
+      display: inline-block;
+      vertical-align: top;
+      overflow: hidden;
+      top:0;
+      left: 0;
+      object-fit: contain;
+      object-position: 50% 50%;
+      margin: 19px;
+    }
+  }
+  &:after {
+    content: "Переместите файлы сюда для загрузки";
+    color: #999;
+    display: block;
+    text-align: center;
+    position: relative;
+    font-size: 14px;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    z-index: 0;
+    top: 63px;
+  }
+  &:not(.something-inside):hover {
+    cursor: pointer;
+    background: #FFF;
+    &:after {
+      content: "Нажмите чтобы добавить файлы";
+    }
+  }
+  .feedme-file {
+    .single-image-uploader;
+   // background: url("../template/shared/preloader-bw.gif") no-repeat 50% 50%;
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+    object-fit: contain;
+    object-position: 50% 50%;
+    cursor: pointer;
+    margin: 19px;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: 50%;
+    }
+    &:hover {
+      &:after {
+        content: "";
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+     //   background: url("../template/shared/delete.png") no-repeat 0 0, rgba(0,0,0,0.3);
+      }
+    }
+  }
+}

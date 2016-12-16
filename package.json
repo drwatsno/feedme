@@ -1,0 +1,45 @@
+{
+  "name": "feedme",
+  "version": "1.0.0",
+  "description": "pure javascript umd module for drag'n'drop file upload",
+  "main": "fdrag.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drwatsno/feedme.git"
+  },
+  "keywords": [
+    "dragndrop",
+    "file",
+    "upload"
+  ],
+  "author": "Dmitriy Gajewski",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/drwatsno/feedme/issues"
+  },
+  "homepage": "https://github.com/drwatsno/feedme#readme",
+  "devDependencies": {
+    "babel-preset-latest": "^6.16.0",
+    "eslint": "^0.20.0",
+    "eslint-loader": "^0.11.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-sourcemaps": "^1.9.1",
+    "browserify": "^13.1.0",
+    "babelify": "^7.3.0",
+    "cssnano": "^3.7.3",
+    "fontmin": "^0.9.6",
+    "gifsicle": "^3.0.3",
+    "gulp-concat": "^2.6.0",
+    "gulp-imagemin": "^3.0.2",
+    "gulp-less": "^3.1.0",
+    "gulp-postcss": "^6.1.1",
+    "gulp-uglify": "^2.0.0",
+    "gulp-util": "^3.0.7",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}

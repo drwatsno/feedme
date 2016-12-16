@@ -1,0 +1,281 @@
+.single-image-uploader {
+  width: 154px;
+  height: 154px;
+  margin-bottom: 40px;
+  border: 1px dashed #6e6e6e;
+  margin-top: 5px;
+  cursor: pointer;
+  position: relative;
+  background-position: 63px -69px;
+  display: inline-block;
+  margin-right: 40px;
+  vertical-align: top;
+}
+.single-image-uploader.loaded {
+  border: 1px solid #6e6e6e;
+}
+.single-image-uploader:hover {
+  background-position: 63px 61px;
+}
+.single-image-uploader .clearbtn {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  cursor: pointer;
+  background-position: 0 0;
+  right: -18px;
+  bottom: 0;
+}
+.single-image-uploader .clearbtn:hover {
+  background-position: 0px -19px;
+}
+.single-image-uploader .ecms-elements_field-is-watermark {
+  position: absolute;
+  top: 20px;
+  right: -18px;
+}
+.single-image-uploader .image-add_button {
+  width: 100%;
+  height: 100%;
+}
+.single-image-uploader .image-add_button:not([src]) {
+  opacity: 0;
+}
+.single-image-uploader .image-add_button:not([src]) + .clearbtn {
+  display: none;
+}
+.single-image-uploader .image-add_button:not([src]) + .clearbtn + .item-published {
+  display: none;
+}
+.feedme-dragmodule {
+  border: 2px solid;
+  min-height: 50vmin;
+  width: 84vmin;
+  margin: 7vmin auto;
+  border-radius: 1vmin;
+  background: #666666;
+  position: relative;
+}
+.feedme-dragmodule:not(:empty):after {
+  font-size: 0;
+}
+.feedme-dragmodule.something-inside:after {
+  content: "";
+  position: relative;
+  width: 18vmin;
+  height: 18vmin;
+  margin: 1vmin;
+  border: 2px solid #FFF;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.3);
+  vertical-align: top;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  object-fit: contain;
+  object-position: 50% 50%;
+}
+.feedme-dragmodule:after {
+  content: "drop here";
+  color: #FFF;
+  display: block;
+  text-align: center;
+  top: 50%;
+  position: absolute;
+  font-size: 2em;
+  left: 50%;
+  margin-left: -4rem;
+  z-index: 0;
+}
+.feedme-dragmodule .feedme-file {
+  width: 18vmin;
+  height: 18vmin;
+  margin: 1vmin;
+  border: 2px solid #FFF;
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  object-fit: contain;
+  object-position: 50% 50%;
+  cursor: pointer;
+}
+.feedme-dragmodule .feedme-file img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: 50%;
+}
+.drag-module-wrap {
+  margin: 40px 0 60px;
+}
+.drag-module-wrap .input-submit {
+  display: none;
+}
+.drag-module {
+  border: 2px solid #ccc;
+  width: 400px;
+  min-height: 150px;
+  box-sizing: border-box;
+  margin: 20px auto;
+  background: #e8e8e8;
+  position: relative;
+  border-radius: 5px;
+}
+.drag-module:not(:empty):after {
+  font-size: 0;
+}
+.drag-module:not(:empty) + .input-submit {
+  display: inline-block;
+}
+.drag-module.waiting + .input-submit {
+  display: none;
+}
+.drag-module.waiting .fdrag-file {
+  display: none;
+}
+.drag-module.something-inside {
+  min-height: 300px;
+}
+.drag-module.something-inside:after {
+  width: 154px;
+  height: 154px;
+  margin-bottom: 40px;
+  border: 1px dashed #6e6e6e;
+  margin-top: 5px;
+  cursor: pointer;
+  background-position: 63px -69px;
+  margin-right: 40px;
+  content: "";
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  object-fit: contain;
+  object-position: 50% 50%;
+  margin: 19px;
+}
+.drag-module.something-inside:after.loaded {
+  border: 1px solid #6e6e6e;
+}
+.drag-module.something-inside:after:hover {
+  background-position: 63px 61px;
+}
+.drag-module.something-inside:after .clearbtn {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  cursor: pointer;
+  background-position: 0 0;
+  right: -18px;
+  bottom: 0;
+}
+.drag-module.something-inside:after .clearbtn:hover {
+  background-position: 0px -19px;
+}
+.drag-module.something-inside:after .ecms-elements_field-is-watermark {
+  position: absolute;
+  top: 20px;
+  right: -18px;
+}
+.drag-module.something-inside:after .image-add_button {
+  width: 100%;
+  height: 100%;
+}
+.drag-module.something-inside:after .image-add_button:not([src]) {
+  opacity: 0;
+}
+.drag-module.something-inside:after .image-add_button:not([src]) + .clearbtn {
+  display: none;
+}
+.drag-module.something-inside:after .image-add_button:not([src]) + .clearbtn + .item-published {
+  display: none;
+}
+.drag-module:after {
+  content: "Переместите файлы сюда для загрузки";
+  color: #999;
+  display: block;
+  text-align: center;
+  position: relative;
+  font-size: 14px;
+  left: 0;
+  margin: 0;
+  width: 100%;
+  z-index: 0;
+  top: 63px;
+}
+.drag-module:not(.something-inside):hover {
+  cursor: pointer;
+  background: #FFF;
+}
+.drag-module:not(.something-inside):hover:after {
+  content: "Нажмите чтобы добавить файлы";
+}
+.drag-module .feedme-file {
+  width: 154px;
+  height: 154px;
+  margin-bottom: 40px;
+  border: 1px dashed #6e6e6e;
+  margin-top: 5px;
+  position: relative;
+  background-position: 63px -69px;
+  margin-right: 40px;
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  object-fit: contain;
+  object-position: 50% 50%;
+  cursor: pointer;
+  margin: 19px;
+}
+.drag-module .feedme-file.loaded {
+  border: 1px solid #6e6e6e;
+}
+.drag-module .feedme-file:hover {
+  background-position: 63px 61px;
+}
+.drag-module .feedme-file .clearbtn {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  cursor: pointer;
+  background-position: 0 0;
+  right: -18px;
+  bottom: 0;
+}
+.drag-module .feedme-file .clearbtn:hover {
+  background-position: 0px -19px;
+}
+.drag-module .feedme-file .ecms-elements_field-is-watermark {
+  position: absolute;
+  top: 20px;
+  right: -18px;
+}
+.drag-module .feedme-file .image-add_button {
+  width: 100%;
+  height: 100%;
+}
+.drag-module .feedme-file .image-add_button:not([src]) {
+  opacity: 0;
+}
+.drag-module .feedme-file .image-add_button:not([src]) + .clearbtn {
+  display: none;
+}
+.drag-module .feedme-file .image-add_button:not([src]) + .clearbtn + .item-published {
+  display: none;
+}
+.drag-module .feedme-file img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: 50%;
+}
+.drag-module .feedme-file:hover:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
